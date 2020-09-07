@@ -13,5 +13,5 @@ print(s, type(s))
 
 i = int(s)
 print(i, type(i))
-f=float(i)
-print(f,type(f))
+f = float(i)
+print(f, type(f))
