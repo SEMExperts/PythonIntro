@@ -15,4 +15,4 @@ N = int(input('Введите целове число: '))
 k = 1
 while (N >= k * k):
     print(k * k)
-    k = k + 1
+    k += 1
