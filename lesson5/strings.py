@@ -73,7 +73,7 @@ print()
 
 # len(str)
 
-# find(sub, start, end) - позволяет выполнить поиск выхождения строки в строку
+# find(sub, start, end) - позволяет выполнить поиск вхождения строки в строку
 
 print(len(s))
 print(s.find('i'))
