@@ -12,7 +12,7 @@
 """
 
 N = int(input('Введите целове число: '))
-k = 1
-while (N >= k * k):
-    print(k * k)
-    k += 1
+i = 1
+while (N >= i * i):
+    print(i * i)
+    i += 1
