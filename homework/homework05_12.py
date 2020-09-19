@@ -6,8 +6,7 @@
 
 s = input()
 ch = input()
-print(len(s))
 for i in range(0, len(s)):
-    print(i)
-    # if s.find(ch, i, +i) == TRUE:
-    #     print(s.find(ch, i))
+    if s.find(ch, i, i+1) != -1:
+        print(s.find(ch, i, i+1))
+
