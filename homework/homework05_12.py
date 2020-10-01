@@ -6,8 +6,13 @@
 
 s = input('Введите строку: ')
 ch = input('Введите символ: ')
+n = 0  # кол-во найденных символов в строке
 i = 0
-while i <= len(s) or s.find(ch, i) == -1:
+while i < len(s):
     if s.find(ch, i) != -1:
         print('Символ найден в индексе: ' + str(s.find(ch, i)))
         i = int(s.find(ch, i)) + 1
+        n += 1
+    i += 1
+if n == 0:
+    print('Символ не найден')
