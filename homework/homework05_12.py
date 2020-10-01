@@ -6,10 +6,8 @@
 
 s = input('Введите строку: ')
 ch = input('Введите символ: ')
-n = 0
-for i in range(0, len(s)):
-    if s.find(ch, i, i + 1) != -1:
-        n += 1 # для проверки следующиего условия
-        print('Символ найден в индексе: ' + str(s.find(ch, i, i + 1)))
-    elif i == (len(s) - 1) and n == 0: # если не было символа в строке
-        print('Символ не найден')
+i = 0
+while i <= len(s) or s.find(ch, i) == -1:
+    if s.find(ch, i) != -1:
+        print('Символ найден в индексе: ' + str(s.find(ch, i)))
+        i = int(s.find(ch, i)) + 1
