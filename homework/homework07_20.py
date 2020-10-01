@@ -4,7 +4,7 @@
 
 Задачу необходимо решить с использованием словаря.
 """
-import pprint
+from pprint import pprint
 
 s = ("""How many cookies could a good cook cook, 
 if a good cook could cook cookies? """)
@@ -13,7 +13,7 @@ lst = s.split()
 print(lst)
 d = dict()
 max = 0
-word = []
+word = ''
 for idx in range(0, len(lst)):
     x = 1
     if d.get(lst[idx]) != None:
@@ -24,6 +24,6 @@ for idx in range(0, len(lst)):
     d[lst[idx]] = x
 
 print("Cколько раз встречается каждое слово: ")
-print(pprint.pformat(d))
+pprint(d)
 print("Слово, которое встречается чаще всего: ", word)
 
