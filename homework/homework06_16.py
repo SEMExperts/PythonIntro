@@ -19,11 +19,13 @@ for _ in range(r):
 print(s)
 k = int(input("Укажите элемент для удаления: "))
 x = 0
+
 for idx in range(r-1):
+    if idx == k:
+        x += 1
     s[idx] = s[x]
     x += 1
-    if s[idx+1] == k:
-        x += 1
+
 
 s.pop()
 print(s)
