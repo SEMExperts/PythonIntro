@@ -19,18 +19,18 @@ rows = 11
 #     print()  # переход на новую строку
 #
 
-for i in range(rows):
-    for j in range(rows * 2 - 1):
-        if (j - i == (rows * 2 - 1) // 2 or
-                j == (rows * 2 - 1) // 2 - i or
-                i == rows - 1
-
-        ):
-            print('*  ', end='')
-        else:
-            print('   ', end='')
-    print()  # переход на новую строку
-print()
+# for i in range(rows):
+#     for j in range(rows * 2 - 1):
+#         if (j - i == (rows * 2 - 1) // 2 or
+#                 j == (rows * 2 - 1) // 2 - i or
+#                 i == rows - 1
+#
+#         ):
+#             print('*  ', end='')
+#         else:
+#             print('   ', end='')
+#     print()  # переход на новую строку
+# print()
 
 c = rows -1
 print(c)
@@ -43,10 +43,11 @@ for i in range(rows):
             # j == (rows * 2 - 1) // 2 or
             j == c  or
             j == c + i or
-            j == c - i
-            
-
-
+            j == c - i or
+            j + 1 == c + i and j + 1 != c or
+            j + 2 == c + i and j + 1 != c and j + 2 != c or
+            j + 3 == c + i and j + 1 != c and j + 2 != c and j + 3 != c or
+            j + 4 == c + i and j + 1 != c and j + 2 != c and j + 3 != c and j + 4 != c
         ):
             print('*  ', end='')
         else:
