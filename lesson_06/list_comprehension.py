@@ -65,4 +65,4 @@ num2 = int(''.join([str(int(value) * 2) for value in str(num)]))  # заменя
 print(num2, type(num2))
 
 s = 'lower case string'  # lOwEr CaSe StRiNg
-l = ''.join([el.upper() if])
+# l = ''.join([el.upper() if])
