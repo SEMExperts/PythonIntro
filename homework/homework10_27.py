@@ -7,17 +7,16 @@
 """
 
 
-def cycle(a, b, c='False'):
-    if c == 'False':
-        d = a * (10 ** b)
-    if c == 'True':
-        d = a // (10 ** b)
-
+def cycle(a, b, c=False):
+    a = str(a)
+    if c == False:
+        d = a[b:] + a[:b]
+    else:
+        d = a[-b:] + a[:-b]
     return d
 
 
 a = int(input('Введите целое число: '))
 b = int(input('Введите кол-во разрядов: '))
 c = input('Введите True для сдвига вправо, либо False для сдвига влево:')
-
-print(cycle(a, b, c))
+print(cycle(a, b, c == 'True'))
