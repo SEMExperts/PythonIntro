@@ -1,4 +1,3 @@
-from pprint import pprint
 
 with open('src.txt', encoding='utf-8') as file, open('result.txt', 'w', encoding='utf-8') as res:
     mid = 0
