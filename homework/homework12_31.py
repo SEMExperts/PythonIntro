@@ -34,6 +34,7 @@ print(l1)
 print(len(lst))
 for value in l1:
     print(value)
+    print(str(value))
 
 print(l1)
 # s1 = [str(value) for value in l2]
